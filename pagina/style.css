@@ -1,0 +1,192 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--red);
+  background-image: url(/pagina_cadastro/intro-component-with-signup-form-master/images/bg-intro-desktop.png);
+  background-size: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.sideA {
+  max-width: 500px;
+  margin: 70px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  line-height: 60px;
+}
+
+.content p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 400;
+}
+
+.sub_content {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 30px;
+}
+
+.signup {
+  width: 500px;
+  min-width: 400px;
+  margin-right: 70px;
+}
+.sub_content a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.trial {
+  box-shadow: 0 7px rgb(0 0 0 / 20%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-weight: 200px;
+  background-color: var(--blue);
+}
+
+.trial span {
+  font-weight: 600;
+}
+.card {
+  box-shadow: 0 7px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  display: block;
+  background-color: white;
+}
+
+.form-space {
+  border-radius: 8px;
+  border-style: inset;
+  border-width: 2px;
+  border-color: lightgray;
+  width: 100%;
+  display: relative;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: gray;
+}
+
+.button {
+  border: 0;
+  width: 100%;
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 0 5px hsl(154deg 55% 45%);
+  text-align: center;
+  margin-bottom: 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.button:hover {
+  background-color: hsl(154, 55%, 45%);
+}
+
+.terms {
+  text-align: center;
+  font-weight: 600px;
+  font-size: 12px;
+  color: lightgray;
+}
+
+.terms a {
+  color: hsl(0, 81%, 69%);
+  text-decoration: none;
+}
+
+.form_control {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.material-icons {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  align-self: center;
+  color: var(--red);
+}
+
+.material-icons.error {
+  display: block;
+}
+
+.material-icons.check {
+  display: block;
+  color: var(--green);
+}
+
+@media only screen and (max-width: 875px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sideA {
+    margin: 70px 30px 50px;
+  }
+
+  .signup {
+    margin-right: 0;
+    margin-bottom: 70px;
+    max-width: 85%;
+    min-width: 0;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .signup .trial span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .button {
+    padding: 15px 60px;
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .button {
+    padding: 15px 45px;
+  }
+}
